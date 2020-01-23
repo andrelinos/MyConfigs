@@ -1,0 +1,94 @@
+{
+  // Tema do VSCode
+  "workbench.colorTheme": "Dracula",
+  
+  // Configurações de fonte
+  "editor.fontSize": 14,
+  "editor.lineHeight": 24,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+
+  // Linhas verticais para lembrar da quebra de linha em códigos longos
+  "editor.rulers": [
+    80,
+    120
+  ],
+  
+  "editor.formatOnSave": false,
+
+  // Configurações do ESlint
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.packageManager": "yarn",
+  
+  "eslint.validate": [
+    "vue",
+    "html",
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+
+  "files.associations": {
+    ".sequelizerc": "javascript"
+  },
+  
+  // aplica um sinal visual na esquerda da linha selecionada
+  "editor.renderLineHighlight": "gutter",
+    
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  
+  // Salva automaticamente as alterações nos arquivos
+  "files.autoSave": "onFocusChange",
+  
+  // Altera visual do terminal do VSCode
+  "terminal.integrated.fontSize": 14,
+  
+  // Define o terminal para o zsh
+  "terminal.integrated.shell.linux": "/usr/bin/zsh",
+  
+  // Altera visual da janela do VSCode
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.tabSize": 2,
+  "window.zoomLevel": 2,
+  "extensions.ignoreRecommendations": true,
+  
+  // Autocompleta códigos 
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+  },
+
+  // Previne que o editor tente mudar o que foi importado automaticamente
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "git.enableSmartCommit": true,
+  
+  // Desabilita aquela caixinha que aparece por cima do código na hora de codar
+  "editor.parameterHints.enabled": false,
+  
+  // Para usar aspas simples
+  "prettier.singleQuote": true,
+
+  // Exibe o caminho do arquivo que está sendo editado
+  "breadcrumbs.enabled": true,
+
+  // Ignora importação automática quando se altera nome de arquivos
+  "explorer.confirmDragAndDrop": false,
+  "javascript.suggest.autoImports": false,
+  "explorer.confirmDelete": false,
+  "typescript.tsserver.log": "verbose",
+  "typescript.suggest.autoImports": false,
+  "workbench.activityBar.visible": true
+}
