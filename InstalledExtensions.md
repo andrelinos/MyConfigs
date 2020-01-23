@@ -1,4 +1,6 @@
 
+# Extensões que uso no dia a dia
+
 - Color Highlight
 - DotENV
 - Dracula Official
