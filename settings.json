@@ -1,136 +1,158 @@
 {
-    // Tema do VSCode
-    "workbench.colorTheme": "Dracula",
-    
-    // Configurações de fonte
-    "editor.fontSize": 14,
-    "editor.lineHeight": 24,
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-  
-    // Linhas verticais para lembrar da quebra de linha em códigos longos
-    "editor.rulers": [
-      80,
-      120
-    ],
-    
-    "editor.formatOnSave": false,
-    
-    // Configurações do ESlint
-    "[javascript]": {
+  // Tema do VSCode
+  "workbench.colorTheme": "Omni",
+
+  // Configurações de fonte
+  "editor.fontSize": 14,
+  "editor.lineHeight": 24,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+
+  // Linhas verticais para lembrar da quebra de linha em códigos longos
+  "editor.rulers": [
+    80,
+    120
+  ],
+
+  // Formatação automática feita pelo editor
+  "editor.formatOnSave": false,
+
+  // Salva automaticamente as alterações nos arquivos
+  // "files.autoSave": "onWindowChange",
+
+  // Altera visual do terminal do VSCode
+  "terminal.integrated.fontSize": 14,
+
+  // Define o terminal para o zsh
+  "terminal.integrated.shell.linux": "/usr/bin/zsh",
+
+  // Altera visual da janela do VSCode
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.tabSize": 2,
+  "window.zoomLevel": 2,
+  "extensions.ignoreRecommendations": true,
+
+  // Adiciona caminho para o PHP
+  "php.validate.executablePath": "/opt/lampp/bin/php",
+  "php.executablePath": "/opt/lampp/bin/php",
+
+  // Autocompleta códigos 
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+  },
+
+  // Previne que o editor tente mudar o que foi importado automaticamente
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+
+  // Ignora importação automática quando se altera nome de arquivos
+  "explorer.confirmDragAndDrop": false,
+  "javascript.suggest.autoImports": false,
+  "explorer.confirmDelete": false,
+  "typescript.tsserver.log": "verbose",
+  "typescript.suggest.autoImports": false,
+  "workbench.activityBar.visible": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+
+  // Configurações adicionais
+  "html.suggest.html5": false,
+  "explorer.compactFolders": false,
+
+  // Desabilita aquela caixinha que aparece por cima do código na hora de codar
+  "editor.parameterHints.enabled": false,
+
+  // Configurações do prettier
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 4,
+  "prettier.bracketSpacing": true,
+
+  // Exibe o caminho do arquivo que está sendo editado
+  "breadcrumbs.enabled": true,
+
+  // Formatar de acordo com a linguagem 
+  "eslint.validate": [
+    "vue",
+    "css",
+    "html",
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  // Configurações do ESlint
+  "[javascript]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
-      } 
     },
+    "editor.formatOnSave": true,
+   // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[html]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.tslint": true
+    }
+  },
 
-    "[typescript]": {
-      "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-        } 
-      },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.tslint": true
+    }
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[javascriptreactnative]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
 
-    "[typescriptreact]": {
-      "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-        } 
-      },
+  // Defini o gerenciador de pacotes padrão
+  "eslint.packageManager": "yarn",
 
-    "[javascriptreact]": {
-      "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-        } 
-      },
-
-    "eslint.packageManager": "yarn",
-    
-    "eslint.validate": [
-      "vue",
-      "html",
-      "javascript",
-      "typescript",
-      "javascriptreact",
-      "typescriptreact"
-    ],
+  // aplica um sinal visual na esquerda da linha selecionada
+  "editor.renderLineHighlight": "gutter",
   
-    "files.associations": {
-      ".sequelizerc": "javascript"
-    },
-    
-    // aplica um sinal visual na esquerda da linha selecionada
-    "editor.renderLineHighlight": "gutter",
-      
-    "css.validate": false,
-    "less.validate": false,
-    "scss.validate": false,
-    
-    // Salva automaticamente as alterações nos arquivos
-    "files.autoSave": "onWindowChange",
-    
-    // Altera visual do terminal do VSCode
-    "terminal.integrated.fontSize": 14,
-    
-    // Define o terminal para o zsh
-    "terminal.integrated.shell.linux": "/usr/bin/zsh",
-    
-    // Altera visual da janela do VSCode
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.tabSize": 2,
-    "window.zoomLevel": 2,
-    "extensions.ignoreRecommendations": true,
+  // Configurações adicionais
+  "files.associations": {
+    ".sequelizerc": "javascript",
+  },
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "git.enableSmartCommit": true,
 
-    // Adiciona caminho para o PHP
-    "php.validate.executablePath": "/opt/lampp/bin/php",
-    "php.executablePath": "/opt/lampp/bin/php",
-    
-    // Autocompleta códigos 
-    "emmet.syntaxProfiles": {
-      "javascript": "jsx"
-    },
-    "emmet.includeLanguages": {
-      "javascript": "javascriptreact",
-    },
-  
-    // Previne que o editor tente mudar o que foi importado automaticamente
-    "javascript.updateImportsOnFileMove.enabled": "never",
-    "typescript.updateImportsOnFileMove.enabled": "never",
-  
-    "gitlens.codeLens.recentChange.enabled": false,
-    "gitlens.codeLens.authors.enabled": false,
-    "gitlens.codeLens.enabled": false,
-    "git.enableSmartCommit": true,
-    
-    // Desabilita aquela caixinha que aparece por cima do código na hora de codar
-    "editor.parameterHints.enabled": false,
-    
-    // Configurações do prettier
-    "prettier.singleQuote": true, 
-    "prettier.tabWidth": 4,
-    "prettier.bracketSpacing": true, 
-  
-    // Exibe o caminho do arquivo que está sendo editado
-    "breadcrumbs.enabled": true,
-  
-    // Ignora importação automática quando se altera nome de arquivos
-    "explorer.confirmDragAndDrop": false,
-    "javascript.suggest.autoImports": false,
-    "explorer.confirmDelete": false,
-    "typescript.tsserver.log": "verbose",
-    "typescript.suggest.autoImports": false,
-    "workbench.activityBar.visible": true,
-    "liveServer.settings.donotShowInfoMsg": true,
-    "liveServer.settings.donotVerifyTags": true,
+  // Altera os ícones de pastas perssonalizados
+  "material-icon-theme.folders.associations": {
+    "infra": "app",
+    "entities": "class",
+    "schemas": "class",
+    "typeorm": "database",
+    "repositories": "mappings",
+    "http": "container",
+    "migrations": "tools",
+    "modules": "components",
+    "implementations": "core",
+    "dtos": "typescript",
+    "fakes": "mock",
+    "websockets": "pipe",
+    "protos": "pipe",
+    "grpc": "pipe"
+  },
 
-    
-    // Configurações adicionais
-    "html.suggest.html5": false,
-    "explorer.compactFolders": false,
-
-    // Desativa pop-up de sugestões quando se está codando
-    /* "editor.quickSuggestions": false,
-    "editor.suggestOnTriggerCharacters": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "html.suggest.html5": false,
-    "editor.snippetSuggestions": "none", 
-    "editor.hover.enabled": false,  */
+  "material-icon-theme.files.associations": {
+    "ormconfig.json": "database",
+    "tsconfig.json": "tune"
   }
+}
